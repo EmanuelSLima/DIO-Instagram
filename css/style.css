@@ -1,0 +1,112 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EFEFEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*box*/
+.box{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: center;
+}
+
+/*box-cellphone*/
+.box-cellphone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+/*box-user*/
+.box-user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 20px 0;
+}
+.brand img{
+    width: 150px;
+}
+.profile-photo img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+#btn1{
+    background: #0095f6;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+#btn2{
+    color: #0095f6;
+    font-size: 14px;
+    text-decoration: none;
+}
+.box-subscribe, .box-subscribe  > a{
+    color: #999;
+    text-decoration: none;
+}
+.buttons a{
+    color: #0095f6;
+    text-decoration: none;
+}
+
+/*box-app*/
+.box-app{
+    text-align: center;
+}
+.box-app p{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.box-app img{
+    width: 150px;
+    margin-right: 20px;
+}
+@media screen and (max-width: 1024px){
+    .box{
+        width: 90%;
+    }
+}
+
+/*Media querys*/
+@media screen and (max-width: 768px){
+    body{
+        background-color: white;
+    }
+    .box{
+        width: 90%;
+    }
+    .box-cellphone{
+        display: none;
+    }
+    .box-user{
+        width: 100%;
+        display: flex;
+        padding: 40px 0;
+    }
+}
